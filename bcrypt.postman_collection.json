@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "66a33e25-23ec-412f-8964-3b1d5865f9de",
+		"name": "bcrypt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26504106"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "",
+						"username": ""
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "test",
+						"username": "k"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"luke\",\r\n    \"password\": \"luke\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"luke\",\r\n    \"password\": \"luke\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/login"
+			},
+			"response": []
+		}
+	]
+}
